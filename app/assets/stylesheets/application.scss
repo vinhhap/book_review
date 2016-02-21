@@ -10,6 +10,35 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+
+$red: rgb(221, 81, 56);
+$navbar-default-bg: rgb(221, 81, 56);
+$navbar-default-link-color: #fff;
+$body-bg: #F0EFEE;
+$white: #fff;
+$blue: #016cc7;
+$yellow: #FFC000;
+
+@import "bootstrap";
+
+.navbar {
+  border-radius: 0;
+  li a {
+    font-weight: bold;
+  }
+  form {
+    button {
+      background: $white;
+      border-radius: 0 !important;
+      background: $white;
+    }
+    .form-group input {
+      border-radius: 0 !important;
+    }
+  }
+}
+
+@import "reviews";

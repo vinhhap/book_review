@@ -12,6 +12,7 @@
   2. Who are we building it for? We are building it for ourselves, but also for the community. Sharing what we like or dislike about a book. In addition, this site is for learning purpose.
   3. What features do we want to have?
     - Reviews
+      - Preview image
       - CRUD
       - Comments (Disqus or Facebook)
       - WYSIWYG editor (CKeditor)

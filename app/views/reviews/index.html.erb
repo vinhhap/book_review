@@ -1,0 +1,31 @@
+<div class="posts_index">
+    <% @reviews.each_slice(4) do |reviews| %>
+      <div class="row">
+        <% reviews.each do |review| %>
+          <div class="col-md-3 reviews_index_item">
+            <div class="panel panel-default">
+              <div class="panel-heading"><img src="//placehold.it/450X300/427fed/fff" class="img-responsive"></div>
+              <div class="panel-body">
+                <p>
+                  <strong>Title: </strong>
+                  <%= review.title %>
+                </p>
+                <p>
+                  <strong>Author: </strong>
+                  <%= review.author %>
+                </p>
+                <p>
+                  <strong>Description: </strong>
+                  <%= review.description %>
+                </p>
+                <p>
+                  <strong>Content: </strong>
+                  <%= truncate(review.content, length: 200) %>
+                </p>
+              </div>
+            </div>
+            </div>
+        <% end %>
+      </div>
+    <% end %>
+</div>

@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+10.times do 
+  review = Review.new
+  review.title = Faker::Book.title
+  review.author = Faker::Book.author
+  review.description = Faker::Book.publisher
+  review.content = Faker::Lorem.paragraph(10, false, 4)
+  review.save
+end
