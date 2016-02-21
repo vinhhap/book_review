@@ -11,5 +11,6 @@
   review.author = Faker::Book.author
   review.description = Faker::Book.publisher
   review.content = Faker::Lorem.paragraph(10, false, 4)
+  review.preview_image = Faker::Placeholdit.image
   review.save
 end
