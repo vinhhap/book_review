@@ -1,8 +1,57 @@
 // Place all the styles related to the reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.posts_index {
+.reviews_index {
   .panel-heading {
     padding: 0;
+  }
+}
+.review_show {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  background: $white;
+  border: 15px solid transparent;
+  -moz-border-image: -moz-linear-gradient(to left, #02AAB0 , #00CDAC);;
+  -webkit-border-image: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+  border-image: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-image-slice: 1;
+  .review_show_inner {
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    .review_show_title {
+      color: $title;
+      font-weight: 400;
+      font-size: 2.8em;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    hr {
+      border-top: 2px solid #01BBAE;
+    }
+    .p_time {
+      margin-bottom: 30px;
+    }
+    .p_preview_image {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .preview_image {
+      display:block;
+      margin:auto;
+    }
+    .review_show_created_at {
+      color: $time;
+    }
+    .review_show_content {
+      color: $text;
+      letter-spacing: 0.5px;
+      font-size: 1.3em;
+      line-height: 1.35;
+      text-align:justify;
+      margin-top: 30px;
+    }
   }
 }
