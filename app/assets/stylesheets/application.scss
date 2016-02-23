@@ -43,5 +43,10 @@ $text: #0d3d56;
     }
   }
 }
+.reviews_index {
+  .panel-heading {
+    padding: 0;
+  }
+}
 
 @import "reviews";

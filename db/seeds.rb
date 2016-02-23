@@ -14,3 +14,10 @@
   review.preview_image = Faker::Placeholdit.image
   review.save
 end
+
+5.times do
+  category = Category.new
+  category.title = Faker::Book.genre
+  category.description = Faker::Lorem.paragraph(2, true, 4)
+  category.save
+end

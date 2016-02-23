@@ -6,7 +6,7 @@
     <p class="p_preview_image"><img src="<%= @review.preview_image %>" class="img-responsive preview_image img-circle"></p>
     <hr>
     <div class="review_show_content">
-      <%= @review.content %>
+      <%= raw @review.content %>
     </div>
   </div>
 </div>

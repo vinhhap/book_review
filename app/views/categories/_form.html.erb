@@ -1,0 +1,14 @@
+<%= render "shared/error", obj: @category %>
+<div class="new_update_form">
+  <%= form_for @category, html: { role: "form" } do |f| %>
+    <div class="form-group">
+      <label for="title_field">Tiêu đề</label>
+      <%= f.text_field(:title, class: "form-control", id: "title_field") %>
+    </div>
+    <div class="form-group">
+      <label for="description_field">Mô tả</label>
+      <%= f.text_field(:description, class: "form-control", id: "description_field") %>
+    </div>
+    <%= f.submit "Tạo", class: "btn btn-default" %>
+  <% end %>
+</div>

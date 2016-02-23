@@ -1,0 +1,28 @@
+<% obj.each_slice(4) do |reviews| %>
+  <div class="row">
+    <% reviews.each do |review| %>
+      <div class="col-md-3 reviews_index_item">
+        <div class="panel panel-default">
+          <div class="panel-heading"><img src="<%= review.preview_image %>" class="img-responsive" style="width: 100%"></div>
+          <div class="panel-body">
+            <p>
+              <strong>Title: </strong>
+              <%= review.title %>
+            </p>
+            <p>
+              <strong>Author: </strong>
+              <%= review.author %>
+            </p>
+            <p>
+              <strong>Description: </strong>
+              <%= review.description %>
+            </p>
+            <p>
+              <%= link_to "Đọc thêm", review_path(review), class: "btn btn-default" %>
+            </p>
+          </div>
+        </div>
+        </div>
+    <% end %>
+  </div>
+<% end %>

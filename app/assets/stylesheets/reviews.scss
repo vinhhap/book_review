@@ -1,11 +1,6 @@
 // Place all the styles related to the reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.reviews_index {
-  .panel-heading {
-    padding: 0;
-  }
-}
 .review_show {
   width: 90%;
   margin: auto;
@@ -53,5 +48,12 @@
       text-align:justify;
       margin-top: 30px;
     }
+  }
+}
+.new_update_form {
+  width: 80%;
+  margin: auto;
+  #content_field {
+    max-width: 100%;
   }
 }
