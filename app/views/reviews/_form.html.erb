@@ -2,20 +2,20 @@
 <div class="new_update_form">
   <%= form_for @review, html: { role: "form" } do |f| %>
     <div class="form-group">
-      <label for="title_field">Tiêu đề</label>
+      <%= f.label :title, "Tiêu đề" %>
       <%= f.text_field(:title, class: "form-control", id: "title_field") %>
     </div>
     <div class="form-group">
-      <label for="author_field">Tác giả</label>
+      <%= f.label :author, "Tác giả" %>
       <%= f.text_field(:author, class: "form-control", id: "author_field") %>
     </div>
     <div class="form-group">
-      <label for="description_field">Mô tả</label>
+      <%= f.label :description, "Mô tả" %>
       <%= f.text_field(:description, class: "form-control", id: "description_field") %>
     </div>
     <div class="form-group">
-      <label for="preview_image_field">Ảnh</label>
-      <%= f.text_field(:preview_image, class: "form-control", id: "preview_image_field") %>
+      <%= f.label :preview_image, "Ảnh" %>
+      <%= f.text_field(:preview_image, class: "form-control") %>
     </div>
     <div class="form-group">
       <label>Thể loại</label><br>
@@ -24,8 +24,8 @@
       <% end %>
     </div>
     <div class="form-group">
-      <label for="content_field">Review</label>
-      <%= f.cktext_area(:content, class: "form-control", id: "content_field", rows: "8") %>
+      <%= f.label :content, "Review" %>
+      <%= f.cktext_area(:content, class: "form-control", rows: "8") %>
     </div>
     <%= f.submit "Tạo", class: "btn btn-default" %>
   <% end %>
