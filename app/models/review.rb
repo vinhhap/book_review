@@ -10,7 +10,7 @@ class Review < ActiveRecord::Base
   private
     def set_default_preview_image
       if self.preview_image.blank?
-        self.preview_image = https://placehold.it/300x300.png/000
+        self.preview_image = "https://placehold.it/300x300.png/000"
       end
     end
 end

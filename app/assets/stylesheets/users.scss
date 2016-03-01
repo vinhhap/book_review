@@ -1,3 +1,10 @@
 .links {
   padding: 0;
 }
+.alert-alert {
+  @extend .alert-warning;
+}
+
+.alert-notice {
+  @extend .alert-info;
+}

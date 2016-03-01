@@ -12,6 +12,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'ckeditor'
 gem 'faker', '~> 1.6', '>= 1.6.1'
 gem 'devise', '~> 3.5', '>= 3.5.6'
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+gem "pundit"
 
 group :development, :test do
   gem 'byebug'
